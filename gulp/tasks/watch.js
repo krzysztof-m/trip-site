@@ -23,9 +23,17 @@ gulp.task('watch', function() {
   watch('./src/scss/**/*.scss', function() {
     gulp.start('cssInject');
   });
+  // Watch for changes in js files & run scripts task (webpack)
+  watch('./src/js/**/*.js', function() {
+    gulp.start('scriptsReload');
+  });
 });
 
 gulp.task('cssInject', ['styles'], function() {
   return gulp.src('./src/css/*.css')
     .pipe(browserSync.stream());
+});
+
+gulp.task('scriptsReload', ['scripts'], function() {
+  browserSync.reload();
 });

@@ -4,3 +4,5 @@ require('./gulp/tasks/styles');
 require('./gulp/tasks/watch');
 //Script responsible for creating modernizr js files
 require('./gulp/tasks/modernizr');
+
+require('./gulp/tasks/scripts');
