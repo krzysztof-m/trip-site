@@ -1,0 +1,105 @@
+.hero {
+    min-height: 100vh;
+    background-image: url(../img/bg-hero.jpg);
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 10rem;
+
+    color: #fff;
+
+    & > .container {
+        position: relative;
+        z-index: 3;
+        min-height: 100vh;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 10rem;
+        left: 0;
+        bottom: 0;
+        background-image: url(../img/sections-svgs/shape-1-top.svg);
+        background-size: cover;
+        z-index: 2;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(#000,.7);
+        z-index: 1;
+    }
+
+    &__img {
+        position: absolute;
+        box-shadow: 0 10px 10px -8px rgba(#000,.5);
+        &--1 {
+            right: 0;
+            top: -10rem;
+            width: 60%;
+            z-index: 1;
+        }
+        &--2 {
+            top: 15rem;
+            right: -5rem;
+            width: 40%;
+            z-index: 2;
+            &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(#000,.4);
+                z-index: 1;
+            }
+        }
+    }
+
+    &__shape {
+        position: absolute;
+        top: 5%;
+        left: 30%;
+        background-color: rgba(#00435b, .9);
+        background-image: linear-gradient(to left, rgba(#00435b, .9), rgba(#00435b, .9)), url(../img/about1.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 50%;
+        height: 50rem;
+        
+    }
+
+    &__text-content {
+        position: relative;
+        width: 60%;
+        margin: 20rem 0 30rem;
+        z-index: 3;
+        /* background-color: rgba(#000, .4);
+        padding: 5rem 10rem 5rem 5rem; */
+    }
+    &__title {
+        font-size: 7rem;
+        font-weight: 400;
+        margin-bottom: 4rem;
+        text-shadow: 2px 2px 2px rgba(#000,.5);
+    }
+    &__text {
+        font-size: 2rem;
+    }
+    &__btn {
+        margin-top: 5rem;
+    }
+    &__features {
+        position: relative;
+        z-index: 4;
+        text-align: center;
+    }
+    &__icon {
+        display: inline-block;
+        max-width: 30rem;
+        margin-bottom: 2rem;
+    }
+}

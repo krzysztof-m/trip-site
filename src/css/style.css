@@ -7,19 +7,132 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-size: 1.6rem;
-  line-height: 1.6; }
+  font-size: 1.8rem;
+  line-height: 1.6;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300; }
 
 h1, h2, h3, h4, h5, h6 {
-  line-height: 1.2; }
+  line-height: 1.2;
+  font-family: 'Playfair Display', serif; }
+
+img {
+  max-width: 100%; }
 
 .container {
   max-width: 1200px;
   margin: 0 auto; }
 
 .row {
-  display: flex; }
+  display: flex;
+  margin: 0 -2rem; }
   .row__col-1-of-2 {
     flex: 0 0 50%; }
   .row__col-1-of-3 {
     flex: 0 0 33.333%; }
+
+[class^="row__col"] {
+  padding: 0 2rem; }
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  text-decoration: none; }
+  .btn:hover {
+    text-decoration: none; }
+  .btn--reverse {
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px #ffffff solid; }
+    .btn--reverse:hover {
+      background-color: #ffffff;
+      color: #161616; }
+
+.heading--box {
+  font-size: 2.4rem;
+  margin-bottom: 2rem; }
+
+.hero {
+  min-height: 100vh;
+  background-image: url(../img/bg-hero.jpg);
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 10rem;
+  color: #fff; }
+  .hero > .container {
+    position: relative;
+    z-index: 3;
+    min-height: 100vh; }
+  .hero::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 10rem;
+    left: 0;
+    bottom: 0;
+    background-image: url(../img/sections-svgs/shape-1-top.svg);
+    background-size: cover;
+    z-index: 2; }
+  .hero::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1; }
+  .hero__img {
+    position: absolute;
+    box-shadow: 0 10px 10px -8px rgba(0, 0, 0, 0.5); }
+    .hero__img--1 {
+      right: 0;
+      top: -10rem;
+      width: 60%;
+      z-index: 1; }
+    .hero__img--2 {
+      top: 15rem;
+      right: -5rem;
+      width: 40%;
+      z-index: 2; }
+      .hero__img--2::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+        z-index: 1; }
+  .hero__shape {
+    position: absolute;
+    top: 5%;
+    left: 30%;
+    background-color: rgba(0, 67, 91, 0.9);
+    background-image: linear-gradient(to left, rgba(0, 67, 91, 0.9), rgba(0, 67, 91, 0.9)), url(../img/about1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 50rem; }
+  .hero__text-content {
+    position: relative;
+    width: 60%;
+    margin: 20rem 0 30rem;
+    z-index: 3;
+    /* background-color: rgba(#000, .4);
+        padding: 5rem 10rem 5rem 5rem; */ }
+  .hero__title {
+    font-size: 7rem;
+    font-weight: 400;
+    margin-bottom: 4rem;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); }
+  .hero__text {
+    font-size: 2rem; }
+  .hero__btn {
+    margin-top: 5rem; }
+  .hero__features {
+    position: relative;
+    z-index: 4;
+    text-align: center; }
+  .hero__icon {
+    display: inline-block;
+    max-width: 30rem;
+    margin-bottom: 2rem; }
