@@ -79,7 +79,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nalert('Test');\n\nvar Alert = function () {\n    function Alert() {\n        _classCallCheck(this, Alert);\n    }\n\n    _createClass(Alert, [{\n        key: 'show',\n        value: function show() {\n            alert('Alert');\n        }\n    }]);\n\n    return Alert;\n}();\n\nvar newAlert = new Alert();\nnewAlert.show();\n\n//# sourceURL=webpack:///./src/js/app.js?");
+eval("\n\n//# sourceURL=webpack:///./src/js/app.js?");
 
 /***/ })
 
