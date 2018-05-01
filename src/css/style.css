@@ -52,6 +52,10 @@ img {
   font-size: 2.4rem;
   margin-bottom: 2rem; }
 
+.heading--section {
+  font-size: 4rem;
+  margin-bottom: 3rem; }
+
 .hero {
   min-height: 100vh;
   background-image: url(../img/bg-hero.jpg);
@@ -136,3 +140,8 @@ img {
     display: inline-block;
     max-width: 30rem;
     margin-bottom: 2rem; }
+
+.about-trip {
+  padding: 7rem 0; }
+  .about-trip__text-content {
+    margin-top: 20rem; }
