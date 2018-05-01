@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.6; }
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2; }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto; }
+
+.row {
+  display: flex; }
+  .row__col-1-of-2 {
+    flex: 0 0 50%; }
+  .row__col-1-of-3 {
+    flex: 0 0 33.333%; }

@@ -1,0 +1,11 @@
+.row {
+    display: flex;
+
+    &__col-1-of-2 {
+        flex: 0 0 50%;
+    }
+
+    &__col-1-of-3 {
+        flex: 0 0 33.333%;
+    }
+}
