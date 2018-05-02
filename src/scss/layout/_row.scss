@@ -13,6 +13,10 @@
     &__col-1-of-3 {
         flex: 0 0 33.333%;
     }
+
+    &__col-2-of-3 {
+        flex: 0 0 66.667%;
+    }
 }
 [class^="row__col"] {
     padding: 0 2rem;
