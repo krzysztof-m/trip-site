@@ -1,0 +1,45 @@
+.cta {
+    padding: 25rem 0 15rem;
+    text-align: center;
+    position: relative;
+    color: #ffffff;
+    &__bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(../img/bg-cta.jpg);
+        background-size: cover;
+        background-position: 50% 50%;
+        z-index: -1;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(#000,.6);
+        }
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 7rem;
+        background-image: url(../img/sections-svgs/shape-1-bottom.svg);
+        background-size: cover;
+    }
+
+    &__paragraph {
+        max-width: 80rem;
+        margin: 0 auto;
+    }
+
+    &__btn {
+        margin-top: 4rem;
+    }
+}
