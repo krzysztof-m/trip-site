@@ -247,3 +247,11 @@ img {
     margin: 0 auto; }
   .cta__btn {
     margin-top: 4rem; }
+
+.footer {
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #ffffff;
+  text-align: center;
+  background-color: #010101; }
