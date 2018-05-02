@@ -32,6 +32,8 @@ img {
     flex: 0 0 50%; }
   .row__col-1-of-3 {
     flex: 0 0 33.333%; }
+  .row__col-2-of-3 {
+    flex: 0 0 66.667%; }
 
 [class^="row__col"] {
   padding: 0 2rem; }
@@ -202,3 +204,8 @@ img {
     top: 0;
     left: 0;
     width: 50%; }
+
+.about-us {
+  padding: 8rem 0; }
+  .about-us__text-content {
+    padding: 8rem 0 12rem; }
